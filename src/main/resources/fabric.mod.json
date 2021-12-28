@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "playtime",
+  "version": "${version}",
+
+  "name": "PlayTime",
+  "description": "Temps de jeu limité",
+  "authors": [
+    "Skyfy16"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/play_time/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ch.skyfy.playtime.PlayTime"
+    ]
+  },
+  "mixins": [
+    "playtime.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
